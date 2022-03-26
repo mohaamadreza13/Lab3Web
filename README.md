@@ -102,3 +102,59 @@ seperti gambar di atas saya menambahkan padding menjadi 8 yang sebelum nya 4 dal
 ![menggabungkan_selldata](img/sell_data.png)
 
 dalam menggabungkan sell data vertikal diperlukan atribute rowspan dan horizontal dengan colspan
+
+## 7). MEMBUAT FORM
+![form](img/form.png)
+
+dalam membuat form digunakan tag form kemudian tag input dengan sesuai dengan kebutuhan dalam pembuatan
+```html
+<header>
+        <h1>Membuat Form</h1>
+    </header>
+    <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" id="nama" name="nama">
+            </p>
+            <p>
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" name="alamat" cols="20" rows="3"></textarea>
+            </p>
+            <p>
+                <label>Jenis Kelamin</label>
+                <input id="jk_l" type="radio" name="kelamin" value="L" /><label for="jk_l">Laki-laki</label>
+                <input id="jk_p" type="radio" name="kelamin" value="P" /><label 
+                for="jk_p">Perempuan</label>
+</p>
+<p><input type="submit" value="Login"></p>
+</fieldset>
+</form>
+```
+
+## 8). MENAMBAHKAN CSS
+![menambahkan_css](img/menambahkan_css.png)
+
+menambahkan css internal dalam form html.
+```css
+    <style>
+        form p > label {
+        display: inline-block;
+        width: 100px;
+        }
+        form input[type="text"], form textarea {
+        border: 1px solid #197a43;
+        }
+        form input[type="submit"] {
+        border: 1px solid #197a43;
+        background-color: #197a43;
+        color: #ffffff;
+        font-weight: bold;
+        padding: 5px 15px;
+        }
+        </style>
+
+```
+
+## SELESAI
